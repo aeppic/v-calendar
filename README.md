@@ -26,3 +26,11 @@ yarn add v-calendar@v2-latest
 ## Documentation
 
 For full documentation, visit [v2.vcalendar.io](https://v2.vcalendar.io/).
+
+## Building
+
+Use node version 10.17.0
+Use yarn version 1.22.22 https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
+
+yarn install
+yarn run build
