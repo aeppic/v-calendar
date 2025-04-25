@@ -200,7 +200,7 @@ export default {
   },
   methods: {
     refresh() {
-      this.$refs.days.forEach(d => d.refresh());
+      // this.$refs.days.forEach(d => d.refresh());
     },
   },
 };

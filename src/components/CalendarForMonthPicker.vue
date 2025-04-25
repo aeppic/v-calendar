@@ -256,7 +256,7 @@ export default {
           'div',
           {
             class: [
-              'vc-pane-container',
+              'vc-pane-container-monthpicker',
               { 'in-transition': this.inTransition },
             ],
             style: {
@@ -895,10 +895,10 @@ export default {
   color: var(--white)
 }
 
-.vc-pane-container {
+.vc-pane-container-monthpicker {
   width: 100%;
   position: relative;
-  &.in-transition {
+  &.iin-transition {
     overflow: hidden;
   }
 }
