@@ -227,7 +227,7 @@ export default {
             'Press the arrow keys to navigate by day, Home and End to navigate to week ends, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year',
         },
         class: [
-          'vc-container',
+          'vc-container-monthpicker',
           'CalendarClass',
           `vc-${this.$theme.color}`,
           {
@@ -267,7 +267,7 @@ export default {
             h(
               'div',
               {
-                class: 'vc-calendar-nav',
+                class: 'vc-calendar-nav-monthpicker',
                 style: {
                   position: 'absolute',
                   top: '40px',
@@ -882,12 +882,12 @@ export default {
 </script>
 
 <style lang="postcss">
-.vc-container {
+.vc-container-monthpicker {
   height: 230px;
   overflow: hidden;
 }
 
-.vc-calendar-nav {
+.vc-calendar-nav-monthpicker {
   padding-left: 12px;
   padding-right: 12px;
   padding-bottom: 50px;

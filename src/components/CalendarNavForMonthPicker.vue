@@ -162,7 +162,7 @@ export default {
       this.$nextTick(() => {
         // Set focus on the first enabled nav item
         const focusableEl = this.$el.querySelector(
-          '.vc-nav-item:not(.is-disabled)',
+          '.vc-nav-item-monthpicker:not(.is-disabled)',
         );
         if (focusableEl) {
           focusableEl.focus();
@@ -170,7 +170,7 @@ export default {
       });
     },
     getItemClasses({ isActive, isCurrent, isDisabled }) {
-      const classes = ['vc-nav-item'];
+      const classes = ['vc-nav-item-monthpicker'];
       if (isActive) {
         classes.push('is-active');
       } else if (isCurrent) {
@@ -330,7 +330,7 @@ export default {
   justify-items: center;
 }
 
-.vc-nav-item {
+.vc-nav-item-monthpicker {
   width: 72px;
   text-align: center;
   line-height: var(--leading-snug);
@@ -385,7 +385,7 @@ export default {
       border-color: var(--accent-400);
     }
   }
-  & .vc-nav-item {
+  & .vc-nav-item-monthpicker {
     &:hover {
       color: var(--gray-900);
       background-color: var(--gray-200);

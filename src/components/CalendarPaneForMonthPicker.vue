@@ -119,19 +119,6 @@ export default {
       }
     });
 
-    const weeks = h(
-      'div',
-      {
-        class: {
-          'vc-weeks': true,
-          'vc-show-weeknumbers': this.showWeeknumbers_,
-          'is-left': showWeeknumbersLeft,
-          'is-right': showWeeknumbersRight,
-        },
-      },
-      [weekdayCells, dayCells],
-    );
-
     return h(
       'div',
       {
