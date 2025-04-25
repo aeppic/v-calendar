@@ -55,7 +55,8 @@
   "peerDependencies": {
     "@popperjs/core": "^2.4.0",
     "deasync": "^0.1.30",
-    "vue": "^2.5.18",
+    "vue": "2.7.15",
+    "vue-template-compiler": "2.7.15",
     "webpack": "^4.47.0"
   },
   "browserslist": [

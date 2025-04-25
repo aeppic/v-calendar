@@ -40,11 +40,9 @@
     "implicit-arrow-linebreak": "off",
     "operator-linebreak": "off",
     "class-methods-use-this": "off",
-    "no-unused-vars": [
-      "error",
-      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
-    ],
+    "no-unused-vars": "off",
     "default-case": "off",
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "no-debugger": "off",
   }
 }
