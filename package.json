@@ -6,10 +6,11 @@
   "author": "Nathan Reyes <nathanreyes@me.com>",
   "scripts": {
     "serve": "vue-cli-service serve src/lib.js",
-    "build": "yarn build:lib && yarn build:calendar && yarn build:date-picker && yarn build:popover && yarn build:popover-row",
+    "build": "yarn build:lib && yarn build:calendar && yarn build:date-picker && yarn build:popover && yarn build:month-picker && yarn build:popover-row",
     "lint": "vue-cli-service lint",
     "build:calendar": "vue-cli-service build --target lib --dest lib/components --name calendar src/components/Calendar.vue",
     "build:date-picker": "vue-cli-service build --no-clean --target lib --dest lib/components --name date-picker src/components/DatePicker.vue",
+    "build:month-picker": "vue-cli-service build --no-clean --target lib --dest lib/components --name month-picker src/components/MonthPicker.vue",
     "build:docs": "vuepress build docs",
     "build:lib": "vue-cli-service build --target lib src/lib.js --mode production",
     "build:popover": "vue-cli-service build --no-clean --target lib --dest lib/components --name popover src/components/Popover.vue",
