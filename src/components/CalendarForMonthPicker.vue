@@ -137,37 +137,37 @@ export default {
         },
       });
 
-      const calendarNav = (page, position) =>
-        h(CalendarNav, {
-          class: 'CalendarNavClass',
-          props: {
-            value: page,
-            position,
-            validator: e => this.canMove(e, { position }),
-          },
-          on: {
-            input: e => this.move(e, { position }),
-          },
-          scopedSlots: this.$scopedSlots,
-        });
+    const calendarNav = (page, position) =>
+      h(CalendarNav, {
+        class: 'CalendarNavClass',
+        props: {
+          value: page,
+          position,
+          validator: e => this.canMove(e, { position }),
+        },
+        on: {
+          input: e => this.move(e, { position }),
+        },
+        scopedSlots: this.$scopedSlots,
+      });
 
-      // const getNavPopoverTest = () =>
-      //   h('div', [
-      //     h('pre', JSON.stringify(data, null, 2))
-      //   ]);
+    // const getNavPopoverTest = () =>
+    //   h('div', [
+    //     h('pre', JSON.stringify(data, null, 2))
+    //   ]);
 
-      // const getNavPopoverNew = () =>
-      // h(CalendarNav, {
-      //   props: {
-      //     value: 4,
-      //     position,
-      //     validator: e => this.canMove(e, { position }),
-      //   },
-      //   on: {
-      //     input: e => this.move(e, { position }),
-      //   },
-      //   scopedSlots: this.$scopedSlots,
-      // });
+    // const getNavPopoverNew = () =>
+    // h(CalendarNav, {
+    //   props: {
+    //     value: 4,
+    //     position,
+    //     validator: e => this.canMove(e, { position }),
+    //   },
+    //   on: {
+    //     input: e => this.move(e, { position }),
+    //   },
+    //   scopedSlots: this.$scopedSlots,
+    // });
 
     // Day popover
     const getDayPopover = () =>
@@ -227,7 +227,7 @@ export default {
             'Press the arrow keys to navigate by day, Home and End to navigate to week ends, PageUp and PageDown to navigate by month, Alt+PageUp and Alt+PageDown to navigate by year',
         },
         class: [
-          'vc-container-monthpicker',
+          'vc-container-monthpicker vc-container',
           'CalendarClass',
           `vc-${this.$theme.color}`,
           {
@@ -247,10 +247,10 @@ export default {
           'div',
           {
             style: {
-              display: 'none'
-            }
+              display: 'none',
+            },
           },
-          [getNavPopover()]
+          [getNavPopover()],
         ),
         h(
           'div',
@@ -261,7 +261,7 @@ export default {
             ],
             style: {
               position: 'relative',
-            }
+            },
           },
           [
             h(
@@ -274,9 +274,9 @@ export default {
                   left: 0,
                   width: '100%',
                   zIndex: 2,
-                }
+                },
               },
-              [calendarNav(this.pages[0], 1)]
+              [calendarNav(this.pages[0], 1)],
             ),
             h(
               CustomTransition,
@@ -892,7 +892,7 @@ export default {
   padding-right: 12px;
   padding-bottom: 50px;
   background-color: var(--gray-800);
-  color: var(--white)
+  color: var(--white);
 }
 
 .vc-pane-container-monthpicker {

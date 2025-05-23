@@ -30,7 +30,12 @@ For full documentation, visit [v2.vcalendar.io](https://v2.vcalendar.io/).
 ## Building
 
 Use node version 10.17.0
-Use yarn version 1.22.22 https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable
+Install npm@6.11.3 globally.
+Install yarn version 1.22.22 globally. https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable 
+
+Make sure both npm and yarn use their respective default registries.
+npm: https://registry.npmjs.org/
+yarn: https://registry.yarnpkg.com
 
 yarn install
 yarn run build
