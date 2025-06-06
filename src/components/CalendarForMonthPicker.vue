@@ -235,6 +235,10 @@ export default {
             'vc-is-dark': this.$theme.isDark,
           },
         ],
+        style: {
+          height: '230px',
+          overflow: 'hidden',
+        },
         on: {
           keydown: this.handleKeydown,
           mouseup: e => e.preventDefault(),

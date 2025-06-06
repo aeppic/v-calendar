@@ -34,6 +34,11 @@ Install npm@6.11.3 globally.
 Install yarn version 1.22.22 globally. https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable 
 
 Make sure both npm and yarn use their respective default registries.
+
+npm config get registry 
+npm config set registry <new url>
+Same for yarn
+
 npm: https://registry.npmjs.org/
 yarn: https://registry.yarnpkg.com
 
